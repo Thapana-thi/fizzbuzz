@@ -14,11 +14,22 @@ func TestFizzBuzzShouldReturnOne(t *testing.T){
 }
 
 func TestFizzBuzzShouldReturnTwo(t *testing.T){
-	fb := fizzbuzz("1")
+	fb := fizzbuzz("2")
 
 	if fb !="2"{ 
 		println("value shoud be 2")
 		t.Error("value shoud be 2 but get:",fb)
+ 
+	}
+	
+}
+
+func TestFizzBuzzShouldReturnFizz(t *testing.T){
+	fb := fizzbuzz("3")
+
+	if fb !="Fizz"{ 
+		println("value shoud be Fizz")
+		t.Error("value shoud be Fizz but get:",fb)
  
 	}
 	
